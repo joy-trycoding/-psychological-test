@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心靈芳療測驗</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="intro-screen active">
+            <h1 class="fade-in">心靈芳療測驗</h1>
+            <p class="fade-in">透過神話人物與精油，探索你的內在狀態。</p>
+            <button id="start-test-btn" class="nav-btn fade-in">開始測驗</button>
+        </div>
+
+        <div class="test-screen">
+            <div id="question-container" class="question-container">
+                </div>
+            <div class="nav-buttons">
+                <button id="next-btn" class="nav-btn">下一題</button>
+                <button id="submit-btn" class="nav-btn" style="display: none;">送出測驗</button>
+            </div>
+        </div>
+
+        <div class="result-screen">
+            <div id="result-content" class="result-content">
+                </div>
+            <div class="result-buttons">
+                <button id="restart-btn" class="nav-btn">重新測驗</button>
+                <div class="share-container">
+                    <h3>分享測驗</h3>
+                    <button id="share-link-btn" class="share-btn">
+                        <img src="https://img.icons8.com/material-outlined/24/FFFFFF/link--v1.png" alt="複製連結" />
+                    </button>
+                    <button id="share-fb-btn" class="share-btn">
+                        <img src="https://img.icons8.com/ios-filled/24/FFFFFF/facebook.png" alt="分享到臉書" />
+                    </button>
+                    <button id="share-line-btn" class="share-btn">
+                        <img src="https://img.icons8.com/ios-filled/24/FFFFFF/line-app.png" alt="分享到LINE" />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
